@@ -1,4 +1,4 @@
-# Digital Publishing Prototype Kit
+# Digital Publishing "Find data by area" prototype
 
 ## About
 

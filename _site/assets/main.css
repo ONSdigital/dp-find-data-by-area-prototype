@@ -182,6 +182,8 @@
     color: #fff; }
   .prototype a:focus {
     outline: 3px solid #FF9933; }
+  .prototype svg a:focus {
+    outline: none; }
   .prototype summary:focus {
     outline: 3px solid #FF9933;
     color: #323132; }

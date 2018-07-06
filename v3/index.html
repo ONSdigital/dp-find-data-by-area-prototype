@@ -42,7 +42,7 @@ title: "Geography"
   <div class="padding-top--3 padding-bottom--6">
     <div class="wrapper">
       <div class="col-wrap">
-        <div class="col col--md-two-thirds col--lg-three-quarters">
+        <div class="col col--md-half col--lg-half">
 
           <h2>Area types</h2>
 
@@ -57,6 +57,15 @@ title: "Geography"
           <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
             <p class="margin-bottom--0"><a href="local-authorities">Local authorities</a></p>
           </div>
+
+          <h2>Popular cities</h2>
+          {% for areas in site.data.areas  %}
+          {% if areas.code == 'E08000035' or areas.code == 'E08000003' or areas.code =='E08000025' or areas.code =='E08000019' or areas.code =='E08000012' %}
+          <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="local-authorities/{{ areas.code }}">{{ areas.english-name }}</a></p>
+          </div>
+          {% endif %}
+          {% endfor %}
 
         </div>
       </div>

@@ -36,6 +36,11 @@ a:focus {
   outline: 3px solid $carrot;
 }
 
+svg a:focus {
+  outline: none;
+}
+
+
 summary:focus {
   outline: 3px solid $carrot;
   color: $thunder;

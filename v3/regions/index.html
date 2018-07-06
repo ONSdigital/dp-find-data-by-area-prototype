@@ -7,6 +7,16 @@ language-switch: false
 title: "Regions"
 ---
 
+<style>
+@media screen and (min-width: 768px) {
+  .sticky {
+    padding-top:4px;
+    position: sticky;
+    top: 0;
+  }
+}
+</style>
+
 <main id="main" role="main" tabindex="-1" class="prototype">
   <div class="background--gallery padding-top--2">
     <div class="wrapper">
@@ -20,7 +30,7 @@ title: "Regions"
                   <a class="breadcrumb__link" href="https://www.ons.gov.uk/">Home</a>
                 </li>
                 <li class="breadcrumb__item">
-                  <a class="breadcrumb__link" href="../../geography-2">Geography</a>
+                  <a class="breadcrumb__link" href="../../v3">Geography</a>
                 </li>
               </ol>
             </div>
@@ -45,19 +55,19 @@ title: "Regions"
   <div class="padding-top--3 padding-bottom--6">
     <div class="wrapper">
       <div class="col-wrap">
-        <div class="col col--md-half col--lg-half">
+        <div class="col col--md-half col--lg-two-thirds">
           <h2>Map</h2>
 
-          <div class="map width-md--25 background--white margin-bottom--3 padding-top--2 padding-bottom--1 padding-right--2 padding-left--2">
-            {% include geography/regions-2.svg %}
+          <div class="background--white margin-bottom--3">
+            {% include geography/uk-regions.svg %}
           </div>
 
 
 
         </div>
 
-        <div class="col col--md-half col--lg-half">
-          <h2>9 available regions</h2>
+        <div class="col col--md-half col--lg-one-third">
+          <h2>9 regions</h2>
 
 
 

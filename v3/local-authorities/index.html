@@ -4,7 +4,7 @@ search: false
 primary-nav: false
 secondary-nav: false
 language-switch: false
-title: "391 local authorities"
+title: "326 local authorities"
 ---
 
 <main id="main" role="main" tabindex="-1" class="prototype">
@@ -20,7 +20,7 @@ title: "391 local authorities"
                   <a class="breadcrumb__link" href="https://www.ons.gov.uk/">Home</a>
                 </li>
                 <li class="breadcrumb__item">
-                  <a class="breadcrumb__link" href="../../geography-2">Geography</a>
+                  <a class="breadcrumb__link" href="../../v3">Geography</a>
                 </li>
               </ol>
             </div>
@@ -45,14 +45,108 @@ title: "391 local authorities"
   <div class="padding-top--3 padding-bottom--6">
     <div class="wrapper">
       <div class="col-wrap">
+
+        <div class="col col--md-one-third col--lg-one-quarter sticky">
+          <h2 class="heading-medium">Page contents</h2>
+          <ul class="section-contents">
+          {% for areas in site.data.regions %}
+          <li><a href="#{{ areas.code }}">{{ areas.english-name }}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+
+
         <div class="col col--md-two-thirds col--lg-three-quarters">
 
-            {% for areas in site.data.areas %}
-              <div class="background--gallery padding-top--2 padding-bottom--1 padding-right--1 padding-left--1 margin-bottom--2">
-                <p class="margin-bottom--0"><a href="{{ areas.code }}">{{ areas.english-name }}</a></p>
-                <p class="font-xxsmall margin-bottom--1">{{ areas.code }}</p>
-              </div>
-            {% endfor %}
+          <h2 id="E12000004">East Midlands</h2>
+          {% for areas in site.data.areas  %}
+          {% if areas.region-code == 'E12000004' %}
+          <div class="background--gallery padding-top--2 padding-bottom--1 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="{{ areas.code }}">{{ areas.english-name }}</a></p>
+            <p class="font-xxsmall margin-bottom--1">{{ areas.code }}</p>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          <h2 id="E12000006">East of England</h2>
+          {% for areas in site.data.areas  %}
+          {% if areas.region-code == 'E12000006' %}
+          <div class="background--gallery padding-top--2 padding-bottom--1 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="{{ areas.code }}">{{ areas.english-name }}</a></p>
+            <p class="font-xxsmall margin-bottom--1">{{ areas.code }}</p>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          <h2 id="E12000007">London</h2>
+          {% for areas in site.data.areas  %}
+          {% if areas.region-code == 'E12000007' %}
+          <div class="background--gallery padding-top--2 padding-bottom--1 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="{{ areas.code }}">{{ areas.english-name }}</a></p>
+            <p class="font-xxsmall margin-bottom--1">{{ areas.code }}</p>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          <h2 id="E12000001">North East</h2>
+          {% for areas in site.data.areas  %}
+          {% if areas.region-code == 'E12000001' %}
+          <div class="background--gallery padding-top--2 padding-bottom--1 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="{{ areas.code }}">{{ areas.english-name }}</a></p>
+            <p class="font-xxsmall margin-bottom--1">{{ areas.code }}</p>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          <h2 id="E12000002">North West</h2>
+          {% for areas in site.data.areas  %}
+          {% if areas.region-code == 'E12000002' %}
+          <div class="background--gallery padding-top--2 padding-bottom--1 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="{{ areas.code }}">{{ areas.english-name }}</a></p>
+            <p class="font-xxsmall margin-bottom--1">{{ areas.code }}</p>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          <h2 id="E12000008">South East</h2>
+          {% for areas in site.data.areas  %}
+          {% if areas.region-code == 'E12000008' %}
+          <div class="background--gallery padding-top--2 padding-bottom--1 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="{{ areas.code }}">{{ areas.english-name }}</a></p>
+            <p class="font-xxsmall margin-bottom--1">{{ areas.code }}</p>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          <h2 id="E12000009">South West</h2>
+          {% for areas in site.data.areas  %}
+          {% if areas.region-code == 'E12000009' %}
+          <div class="background--gallery padding-top--2 padding-bottom--1 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="{{ areas.code }}">{{ areas.english-name }}</a></p>
+            <p class="font-xxsmall margin-bottom--1">{{ areas.code }}</p>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          <h2 id="E12000005">West Midlands</h2>
+          {% for areas in site.data.areas  %}
+          {% if areas.region-code == 'E12000005' %}
+          <div class="background--gallery padding-top--2 padding-bottom--1 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="{{ areas.code }}">{{ areas.english-name }}</a></p>
+            <p class="font-xxsmall margin-bottom--1">{{ areas.code }}</p>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          <h2 id="E12000003">Yorkshire and The Humber</h2>
+          {% for areas in site.data.areas  %}
+          {% if areas.region-code == 'E12000003' %}
+          <div class="background--gallery padding-top--2 padding-bottom--1 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="{{ areas.code }}">{{ areas.english-name }}</a></p>
+            <p class="font-xxsmall margin-bottom--1">{{ areas.code }}</p>
+          </div>
+          {% endif %}
+          {% endfor %}
 
         </div>
       </div>

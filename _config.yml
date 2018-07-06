@@ -35,6 +35,7 @@ exclude:
 page_gen-dirs: true # uncomment, if you prefer to generate named folders
 
 page_gen:
+
   - index_files: false
     data: 'areas'
     template: 'area'
@@ -52,3 +53,21 @@ page_gen:
     template: 'area'
     name: 'code'
     dir: 'v2/regions'
+
+  - index_files: false
+    data: 'areas'
+    template: 'area-v3'
+    name: 'code'
+    dir: 'v3/local-authorities'
+
+  - index_files: false
+    data: 'countries'
+    template: 'area-v3'
+    name: 'code'
+    dir: 'v3/countries'
+
+  - index_files: false
+    data: 'regions'
+    template: 'area-v3'
+    name: 'code'
+    dir: 'v3/regions'

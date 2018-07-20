@@ -83,11 +83,6 @@ language-switch: false
           <h2 id="map">Map</h2>
           <img style="width:100%;" src="{{ "/assets/map/E12000001.png" | relative_url }}" alt="">
 
-
-          <!-- <div class="map width-md--25 background--white margin-bottom--3">
-            {% include geography/{{page.code}}.svg %}
-          </div> -->
-
           <br />
           <br />
 
@@ -107,7 +102,24 @@ language-switch: false
             <li><a href="../local-authorities/E08000024">Sunderland</a></li>
         </ul>
         {% endif %}
-        
+
+        {% if page.code == 'E08000021' %}
+        <h2 id="map">Map</h2>
+        <img style="width:100%;" src="{{ "/assets/map/E08000021.png" | relative_url }}" alt="">
+
+        <br />
+        <br />
+        {% endif %}
+
+        {% if page.code == 'E08000001' %}
+        <h2 id="map">Map</h2>
+        <img style="width:100%;" src="{{ "/assets/map/E08000001.png" | relative_url }}" alt="">
+
+        <br />
+        <br />
+        {% endif %}
+
+
           <h2 id="datasets">Statistics</h2>
 
           <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">

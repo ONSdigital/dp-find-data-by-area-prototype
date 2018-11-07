@@ -4,7 +4,7 @@ search: true
 primary-nav: true
 secondary-nav: true
 language-switch: true
-title: "7 countries"
+title: "7 Countries"
 ---
 
 <main id="main" role="main" tabindex="-1" class="prototype">
@@ -23,7 +23,7 @@ title: "7 countries"
                   <a class="breadcrumb__link" href="../../v4">Geography</a>
                 </li>
                 <li class="breadcrumb__item">
-                  {{ page.title }}
+                  Countries
                 </li>
               </ol>
             </div>
@@ -53,7 +53,7 @@ title: "7 countries"
             {% for areas in site.data.countries %}
               <div class="background--gallery padding-top--2 padding-bottom--1 padding-right--1 padding-left--1 margin-bottom--2">
                 <p class="margin-bottom--0"><a href="{{ areas.code }}">{{ areas.english-name }}</a></p>
-                <p class="font-xxsmall margin-bottom--1">{{ areas.code }}</p>
+                <p class="font-xsmall margin-bottom--1">{{ areas.code }}</p>
               </div>
             {% endfor %}
 

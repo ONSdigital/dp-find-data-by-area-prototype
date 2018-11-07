@@ -48,7 +48,7 @@ title: "Regions"
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
-          <h1 class="text margin-top-sm--0 margin-top-md--0 margin-bottom-sm--3 margin-bottom-md--6">{{ page.title }}</h1>
+          <h1 class="text margin-top-sm--0 margin-top-md--0 margin-bottom-sm--3 margin-bottom-md--6">9 {{ page.title }}</h1>
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@ title: "Regions"
   <div class="padding-top--3 padding-bottom--6">
     <div class="wrapper">
       <div class="col-wrap">
-        <div class="col col--md-half col--lg-two-thirds">
+        <!-- <div class="col col--md-half col--lg-two-thirds">
           <h2>Map</h2>
 
           <div class="background--white margin-bottom--3">
@@ -67,17 +67,13 @@ title: "Regions"
 
 
 
-        </div>
+        </div> -->
 
-        <div class="col col--md-half col--lg-one-third">
-          <h2>9 regions</h2>
-
-
-
+        <div class="col">
           {% for areas in site.data.regions %}
             <div class="background--gallery padding-top--2 padding-bottom--1 padding-right--1 padding-left--1 margin-bottom--2">
               <p class="margin-bottom--0"><a href="{{ areas.code }}">{{ areas.english-name }}</a></p>
-              <p class="font-xxsmall margin-bottom--1">{{ areas.code }}</p>
+              <p class="font-xsmall margin-bottom--1">{{ areas.code }}</p>
             </div>
           {% endfor %}
 

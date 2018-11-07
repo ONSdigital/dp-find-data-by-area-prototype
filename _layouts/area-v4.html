@@ -1,0 +1,164 @@
+---
+layout: prototype
+search: false
+primary-nav: false
+secondary-nav: false
+language-switch: false
+---
+
+<style>
+@media screen and (min-width: 768px) {
+  .sticky {
+    padding-top:4px;
+    position: sticky;
+    top: 0;
+  }
+}
+</style>
+
+<main id="main" role="main" tabindex="-1" class="prototype">
+  <div class="background--gallery padding-top--2">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col">
+
+          <nav>
+            <div class="breadcrumb">
+              <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="https://www.ons.gov.uk/">Home</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="../../v3">Geography</a>
+                </li>
+              </ol>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="background--gallery">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col">
+          <h1 class="text margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--1">{{page.english-name}}</h1>
+          <p>{{page.code}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="padding-top--3 padding-bottom--6">
+    <div class="wrapper">
+      <div class="col-wrap">
+
+        <div class="col col--md-one-third col--lg-one-quarter sticky">
+            <h2 class="heading-medium">Page contents</h2>
+            <ul class="section-contents">
+              {% if page.code == 'E12000001' %}
+              <li>
+                <a href="#map">Map</a>
+              </li>
+              {% endif %}
+              <li>
+                <a href="#datasets">Statistics</a>
+              </li>
+              <li>
+                <a href="#downloads">Geospatial data</a>
+              </li>
+              <li>
+                <a href="#attributes">Attributes</a>
+              </li>
+            </ul>
+        </div>
+
+
+        <div class="col col--md-two-thirds col--lg-three-quarters">
+
+          {% if page.code == 'E12000001' %}
+          <h2 id="map">Map</h2>
+          <img style="width:100%;" src="{{ "/assets/map/E12000001.png" | relative_url }}" alt="">
+
+          <br />
+          <br />
+
+          <h3>Areas in {{page.english-name}}</h3>
+          <ul style="column-count: 3;list-style: none; padding-left: 0;">
+            <li><a href="../local-authorities/E06000047">County Durham</a></li>
+            <li><a href="../local-authorities/E06000005">Darlington</a></li>
+            <li><a href="../local-authorities/E08000037">Gateshead</a></li>
+            <li><a href="../local-authorities/E06000001">Hartlepool</a></li>
+            <li><a href="../local-authorities/E06000002">Middlesbrough</a></li>
+            <li><a href="../local-authorities/E08000021">Newcastle upon Tyne</a></li>
+            <li><a href="../local-authorities/E08000022">North Tyneside</a></li>
+            <li><a href="../local-authorities/E06000057">Northumberland</a></li>
+            <li><a href="../local-authorities/E06000003">Redcar and Cleveland</a></li>
+            <li><a href="../local-authorities/E08000023">South Tyneside</a></li>
+            <li><a href="../local-authorities/E06000004">Stockton-on-Tees</a></li>
+            <li><a href="../local-authorities/E08000024">Sunderland</a></li>
+        </ul>
+        {% endif %}
+
+        {% if page.code == 'E08000021' %}
+        <h2 id="map">Map</h2>
+        <img style="width:100%;" src="{{ "/assets/map/E08000021.png" | relative_url }}" alt="">
+
+        <br />
+        <br />
+        {% endif %}
+
+        {% if page.code == 'E08000001' %}
+        <h2 id="map">Map</h2>
+        <img style="width:100%;" src="{{ "/assets/map/E08000001.png" | relative_url }}" alt="">
+
+        <br />
+        <br />
+        {% endif %}
+
+
+          <h2 id="datasets">Statistics</h2>
+
+          <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
+            <h3 class="heading-small margin-bottom--1 padding-top--0"><a href="{% if page.code == "E08000001" %}https://beta.ons.gov.uk/filters/9679c326-962c-4d89-b67b-8ab75cabe787/dimensions{% else %}https://beta.ons.gov.uk/datasets/ashe-table-7-hours/editions/time-series/versions/1{% endif %}">Annual summary of hours worked, place of work by Local Authority</a></h3>
+            <p class="margin-bottom--1">Estimates of paid hours worked for UK employees by gender and full/part-time working by work based Region to Local Authority level.</p>
+          </div>
+
+          <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
+            <h3 class="heading-small margin-bottom--1 padding-top--0"><a href="{% if page.code == "E08000001" %}https://beta.ons.gov.uk/filters/0a53a337-9c7b-426d-9a2b-0d427f73c333/dimensions{% else %}https://beta.ons.gov.uk/datasets/mid-year-pop-est/editions/time-series/versions/2{% endif %}">Population Estimates for UK, England and Wales, Scotland and Northern Ireland</a></h3>
+            <p class="margin-bottom--1">Estimates of the usual resident population for the UK as at 30 June of the reference year. Provided by administrative area, single year of age and sex.</p>
+          </div>
+
+          <br />
+
+          <h2 id="downloads">Geospatial data</h2>
+          <h3 class="heading-small margin-bottom--1 padding-top--0"><a href="http://statistics.data.gov.uk/boundaries/{{page.code}}.json">{{page.english-name}} GeoJSON</a></h3>
+          <p class="margin-bottom--1">JSON, 23KB</p>
+          <p class="margin-bottom--5">This file is in a <a href="http://geojson.org/">GeoJSON</a> format</p>
+
+          <h3 class="heading-small margin-bottom--1 padding-top--0"><a href="{{ "/assets/downloads/area-geo-package.gpkg" | relative_url }}">{{page.english-name}} GeoPackage</a></h3>
+          <p class="margin-bottom--1">GPKG, 28KB</p>
+          <p class="margin-bottom--5">This file is in a <a href="https://www.geopackage.org/">GeoPackage</a> format</p>
+
+          <h2 id="attributes">Attributes</h2>
+          <dl class="attribute-list">
+            <dt>Code:</dt>
+            <dd>{{page.code}}</dd><br />
+            <!-- <dt>FID:</dt>
+            <dd>{{page.FID}}</dd><br /> -->
+            <dt>Release date:</dt>
+            <dd>December 2017</dd>
+            <!-- <dt>License:</dt>
+            <dd>Open Government Licence v3.0</dd> -->
+          </dl>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>

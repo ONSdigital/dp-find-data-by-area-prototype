@@ -13,7 +13,7 @@ $spacing-unit: 8px;
 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, svg, %vertical-rhythm {
   margin-bottom: $spacing-unit*2;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 // Headings
@@ -21,9 +21,9 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, svg, %vertical-r
 .heading-xlarge,
 .heading-large,
 .heading-medium,
+.heading-normal,
 .heading-small,
 .heading-xsmall,
-.heading-xxsmall,
 h1,
 h2,
 h3,
@@ -37,9 +37,11 @@ h6 {
 // Base font size
 address,li,p,.btn, summary {
   font-size: 16px;
+  line-height: 24px;
   margin-bottom: $spacing-unit*4;
   @media (min-width: 768px) {
     font-size: 18px;
+    line-height: 32px;
   }
 }
 
@@ -70,10 +72,6 @@ li {
 // Links
 a {
   text-decoration: underline;
-  font-size: 16px;
-  @media (min-width: 768px) {
-    font-size: 19px;
-  }
 }
 
 .font-xlarge,
@@ -84,8 +82,8 @@ h1 {
   margin: 16px 0 24px 0;
   @media (min-width: 768px) {
     font-size: 38px;
-    margin: 32px 0 32px 0;
     line-height: 48px;
+    margin: 32px 0 32px 0;
   }
 }
 
@@ -93,9 +91,11 @@ h1 {
 .heading-large,
 h2 {
   font-size: 24px;
+  line-height: 32px;
   margin: 24px 0 16px 0;
   @media (min-width: 768px) {
-    font-size: 32px;
+    font-size: 30px;
+    line-height: 40px;
     margin: 32px 0 32px 0;
   }
 }
@@ -103,51 +103,46 @@ h2 {
 .font-medium,
 .heading-medium,
 h3 {
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 24px;
   margin: 24px 0 16px 0;
-  line-height: 32px;
   @media (min-width: 768px) {
     font-size: 24px;
-    margin: 32px 0 32px 0;
     line-height: 32px;
+    margin: 32px 0 32px 0;
+  }
+}
+
+.font-normal,
+.heading-normal,
+h4 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 16px 0 16px 0;
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 32px;
+    margin: 24px 0 16px 0;
   }
 }
 
 .font-small,
 .heading-small,
-h4 {
+small,
+h5 {
   font-size: 16px;
-  margin: 16px 0 16px 0;
   line-height: 24px;
+  margin-bottom: $spacing-unit;
   @media (min-width: 768px) {
-    font-size: 18px;
-    margin: 24px 0 16px 0;
-    line-height: 32px;
+    margin-bottom: $spacing-unit*3;
   }
 }
 
 .font-xsmall,
 .heading-xsmall,
-h5 {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: $spacing-unit;
-  @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 32px;
-    margin-bottom: $spacing-unit*3;
-  }
-}
-
-.font-xxsmall,
-.heading-xxsmall,
 h6 {
   font-size: 14px;
   line-height: 24px;
-  @media (min-width: 768px) {
-    font-size: 14px;
-    line-height: 24px;
-  }
 }
 
 // hr
@@ -155,57 +150,4 @@ h6 {
 hr {
   border: 0;
   border-bottom: 1px solid $iron;
-}
-
-// Section contents for the bulletin design sprint
-ul.section-contents {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.section-contents li {
-  margin: 0;
-  padding-right: $spacing-unit*2;
-  margin-left: $spacing-unit*2;
-  margin-bottom: 5px;
-  line-height: 20px;
-}
-
-// panel
-
-summary {
-  margin-bottom:0;
-}
-
-.panel {
-  padding-top: $spacing-unit;
-  padding-bottom: $spacing-unit;
-}
-
-blockquote {
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  text-align: justify;
-  padding-left: $spacing-unit*4;
-  padding-right: $spacing-unit*4;
-  margin-bottom: $spacing-unit*4;
-  @media (min-width: 768px) {
-    padding-left: $spacing-unit*8;
-    padding-right: $spacing-unit*8;
-  }
-}
-
-.header-quote {
-  img {
-    width: 52px;
-    height: 34px;
-  }
-  text-align: left;
-  padding-left: 0;
-  padding-right: 0;
-  margin-bottom: $spacing-unit*4;
 }

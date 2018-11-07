@@ -71,3 +71,21 @@ page_gen:
     template: 'area-v3'
     name: 'code'
     dir: 'v3/regions'
+
+  - index_files: false
+    data: 'areas'
+    template: 'area-v4'
+    name: 'code'
+    dir: 'v4/local-authorities'
+
+  - index_files: false
+    data: 'countries'
+    template: 'area-v4'
+    name: 'code'
+    dir: 'v4/countries'
+
+  - index_files: false
+    data: 'regions'
+    template: 'area-v4'
+    name: 'code'
+    dir: 'v4/regions'

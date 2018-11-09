@@ -81,3 +81,36 @@ summary:focus {
   outline: 3px solid $carrot;
   color: $white;
 }
+
+// Section contents
+
+@media screen and (min-width: 768px) {
+  .sticky {
+    padding-top:4px;
+    position: sticky;
+    top: 0;
+  }
+}
+
+.section-contents a {
+  @extend .font-small;
+}
+
+.section-contents li:before {
+  content: "– ";
+  margin-left: -12px;
+  padding-right: 4px;
+}
+
+.section-contents {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section-contents li {
+  margin: 0;
+  margin-left: $spacing-unit*2;
+  margin-bottom: 5px;
+  line-height: 20px;
+}

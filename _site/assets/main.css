@@ -41,12 +41,12 @@
 .prototype h6 {
   padding-top: 16px;
   font-weight: bold; }
-.prototype address, .prototype li, .prototype p, .prototype .btn, .prototype summary {
+.prototype address, .prototype li, .prototype p, .prototype dl, .prototype .btn, .prototype summary {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 32px; }
   @media (min-width: 768px) {
-    .prototype address, .prototype li, .prototype p, .prototype .btn, .prototype summary {
+    .prototype address, .prototype li, .prototype p, .prototype dl, .prototype .btn, .prototype summary {
       font-size: 18px;
       line-height: 32px; } }
 .prototype ul, .prototype ol {
@@ -56,6 +56,9 @@
   padding: 0;
   margin-top: 8px;
   margin-bottom: 8px; }
+.prototype dt {
+  float: left;
+  clear: left; }
 .prototype .list-heading {
   margin-bottom: 16px; }
 .prototype .font-weight--bold {
@@ -116,7 +119,7 @@
       font-size: 18px;
       line-height: 32px;
       margin: 24px 0 16px 0; } }
-.prototype .font-small,
+.prototype .font-small, .prototype .section-contents a,
 .prototype .heading-small,
 .prototype small,
 .prototype h5 {
@@ -124,7 +127,7 @@
   line-height: 24px;
   margin-bottom: 8px; }
   @media (min-width: 768px) {
-    .prototype .font-small,
+    .prototype .font-small, .prototype .section-contents a,
     .prototype .heading-small,
     .prototype small,
     .prototype h5 {
@@ -200,6 +203,24 @@
 .prototype .btn:focus {
   outline: 3px solid #FF9933;
   color: #FFFFFF; }
+@media screen and (min-width: 768px) {
+  .prototype .sticky {
+    padding-top: 4px;
+    position: sticky;
+    top: 0; } }
+.prototype .section-contents li:before {
+  content: "– ";
+  margin-left: -12px;
+  padding-right: 4px; }
+.prototype .section-contents {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+.prototype .section-contents li {
+  margin: 0;
+  margin-left: 16px;
+  margin-bottom: 5px;
+  line-height: 20px; }
 .prototype .visually-hidden {
   /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
   position: absolute !important;

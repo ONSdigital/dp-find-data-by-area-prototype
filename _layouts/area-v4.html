@@ -1,13 +1,13 @@
 ---
 layout: prototype
-search: false
-primary-nav: false
-secondary-nav: false
-language-switch: false
+search: true
+primary-nav: true
+secondary-nav: true
+language-switch: true
 ---
 
 <main id="main" role="main" tabindex="-1" class="prototype">
-  <div class="background--gallery padding-top--2">
+  <div class="background--gallery">
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
@@ -19,7 +19,10 @@ language-switch: false
                   <a class="breadcrumb__link" href="https://www.ons.gov.uk/">Home</a>
                 </li>
                 <li class="breadcrumb__item">
-                  <a class="breadcrumb__link" href="../../v3">Geography</a>
+                  <a class="breadcrumb__link" href="../../v4">Geography</a>
+                </li>
+                <li class="breadcrumb__item">
+                  {{page.english-name}}
                 </li>
               </ol>
             </div>
@@ -34,19 +37,19 @@ language-switch: false
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
-          <h1 class="text margin-top-sm--0 margin-top-md--0 margin-bottom-sm--3 margin-bottom-md--6">{{page.english-name}}</h1>
+          <h1 class="text margin-top-sm--0 margin-top-md--0 margin-bottom-sm--4 margin-bottom-md--4">{{page.english-name}}</h1>
         </div>
       </div>
     </div>
 
   </div>
 
-  <div class="padding-bottom--6">
+  <div class="padding-bottom--4">
     <div class="wrapper">
       <div class="col-wrap">
 
         <div class="col col--md-one-third col--lg-one-quarter sticky">
-            <h2 class="heading-normal margin-top--4">Page contents</h2>
+            <h2 class="heading-normal margin-top--2">Page contents</h2>
             <ul class="section-contents">
               <li>
                 <a href="#datasets">Datasets</a>
@@ -60,7 +63,7 @@ language-switch: false
 
         <div class="col col--md-two-thirds col--lg-three-quarters">
 
-          <h2 id="datasets" class="margin-top--4">2 datasets</h2>
+          <h2 id="datasets" class="padding-top--0 margin-top--4 margin-bottom--2">2 datasets</h2>
 
           <div class="background--gallery padding-top--4 padding-bottom--4 padding-right--2 padding-left--2 margin-bottom--2">
             <h3 class="heading-normal margin-bottom--1 margin-bottom--0 padding-top--0 margin-top--0"><a href="{% if page.code == "E08000001" %}https://beta.ons.gov.uk/filters/9679c326-962c-4d89-b67b-8ab75cabe787/dimensions{% else %}https://beta.ons.gov.uk/datasets/ashe-table-7-hours/editions/time-series/versions/1{% endif %}">Annual summary of hours worked, place of work by Local Authority</a></h3>
@@ -72,7 +75,7 @@ language-switch: false
             <p class="margin-bottom--1">Estimates of the usual resident population for the UK as at 30 June of the reference year. Provided by administrative area, single year of age and sex.</p>
           </div>
 
-          <h2 id="attributes">Attributes</h2>
+          <h2 id="attributes" class="padding-top--0 margin-top--4 margin-bottom--2">Attributes</h2>
           <dl>
             <dt>Code: &nbsp;</dt>
             <dd>{{page.code}}</dd>

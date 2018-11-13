@@ -8,6 +8,12 @@
   text-decoration: none;
 }
 
+// hover
+
+a:hover {
+  color: $link-hover-colour;
+}
+
 // Visited links
 
 // A dirty pattern library class to force the visited style onto links

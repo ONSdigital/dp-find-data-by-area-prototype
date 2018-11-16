@@ -13,7 +13,7 @@ $spacing-unit: 8px;
 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, svg, %vertical-rhythm {
   margin-bottom: $spacing-unit*2;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 // Headings
@@ -35,6 +35,7 @@ h6 {
 }
 
 // Base font size
+
 address,li,p,dl,.btn, summary {
   font-size: 16px;
   line-height: 24px;
@@ -48,24 +49,35 @@ address,li,p,dl,.btn, summary {
 // Lists
 ul,ol {
   margin-bottom: $spacing-unit*4;
-  padding-left: $spacing-unit*2;
+  padding-left: $spacing-unit*4;
 }
 li {
+  margin: 0;
   padding: 0;
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
 }
 
-dt {
-  float: left;
-  clear: left;
+// Definition list
+
+ dt {
+   float: left;
+   clear: left;
+ }
+
+ .definition-list__description--inline {
+  display: inline;
 }
 
-.list-heading {
-  margin-bottom: $spacing-unit*2;
+.definition-list__description--inline::after {
+    content: " |";
+    color: $iron;
+}
+
+.definition-list__description--inline:last-child::after {
+    content: "";
 }
 
 // Font weights
+
 .font-weight--bold {
   font-weight: bold;
 }
@@ -75,9 +87,12 @@ dt {
 }
 
 // Links
+
 a {
   text-decoration: underline;
 }
+
+// Headings
 
 .font-xlarge,
 .heading-xlarge,
@@ -155,4 +170,15 @@ h6 {
 hr {
   border: 0;
   border-bottom: 1px solid $iron;
+}
+
+// panel
+
+summary {
+  margin-bottom:0;
+}
+
+.panel {
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
 }

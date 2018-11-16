@@ -26,7 +26,7 @@
   padding: 0; }
 .prototype h1, .prototype h2, .prototype h3, .prototype h4, .prototype h5, .prototype h6, .prototype p, .prototype blockquote, .prototype pre, .prototype ul, .prototype ol, .prototype dl, .prototype figure, .prototype svg {
   margin-bottom: 16px;
-  line-height: 1; }
+  line-height: 1.5; }
 .prototype .heading-xlarge,
 .prototype .heading-large,
 .prototype .heading-medium,
@@ -51,16 +51,20 @@
       line-height: 32px; } }
 .prototype ul, .prototype ol {
   margin-bottom: 32px;
-  padding-left: 16px; }
+  padding-left: 32px; }
 .prototype li {
-  padding: 0;
-  margin-top: 8px;
-  margin-bottom: 8px; }
+  margin: 0;
+  padding: 0; }
 .prototype dt {
   float: left;
   clear: left; }
-.prototype .list-heading {
-  margin-bottom: 16px; }
+.prototype .definition-list__description--inline {
+  display: inline; }
+.prototype .definition-list__description--inline::after {
+  content: " |";
+  color: #D0D2D3; }
+.prototype .definition-list__description--inline:last-child::after {
+  content: ""; }
 .prototype .font-weight--bold {
   font-weight: bold; }
 .prototype .font-weight--normal {
@@ -140,6 +144,11 @@
 .prototype hr {
   border: 0;
   border-bottom: 1px solid #D0D2D3; }
+.prototype summary {
+  margin-bottom: 0; }
+.prototype .panel {
+  padding-top: 8px;
+  padding-bottom: 8px; }
 .prototype caption {
   padding-bottom: 16px;
   margin-bottom: 0;
